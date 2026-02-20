@@ -15,10 +15,10 @@
 
 **Objectif** : installer l’ossature minimale du produit.
 
-- [ ] T001 Créer l’arborescence `frontend/src/{pages,composants,services,styles}` et `backend/src/{domaines,services,api}`
-- [ ] T002 Créer les fichiers de configuration de base dans `frontend/` et `backend/` (scripts de démarrage, contrôle qualité, variables d’environnement)
-- [ ] T003 [P] Créer la structure de base de données côté Supabase dans `backend/src/domaines/schema.sql`
-- [ ] T004 [P] Créer les constantes de canaux incluant Meta dans `backend/src/domaines/canaux.ts`
+- [X] T001 Créer l’arborescence `frontend/src/{pages,composants,services,styles}` et `backend/src/{domaines,services,api}`
+- [X] T002 Créer les fichiers de configuration de base dans `frontend/` et `backend/` (scripts de démarrage, contrôle qualité, variables d’environnement)
+- [X] T003 [P] Créer la structure de base de données côté Supabase dans `backend/src/domaines/schema.sql`
+- [X] T004 [P] Créer les constantes de canaux incluant Meta dans `backend/src/domaines/canaux.ts`
 
 ---
 
@@ -26,11 +26,11 @@
 
 **Objectif** : livrer les briques indispensables à toutes les histoires.
 
-- [ ] T005 Créer le module d’accès aux données Supabase dans `backend/src/services/stockage.ts`
-- [ ] T006 Créer le module de connexion X (connexion, lecture profil, lecture publications publiques) dans `backend/src/services/connexion-x.ts`
-- [ ] T007 Créer le modèle commun des états d’affichage (`normal`, `Bientôt disponible`, `Erreur`) dans `frontend/src/services/etat-bloc.ts`
-- [ ] T008 Créer les routes serveur communes pour `questionnaire`, `tableau de bord`, `campagnes`, `comparaison` dans `backend/src/api/routes.ts`
-- [ ] T009 Créer la page d’entrée et le routage général dans `frontend/src/pages/entree.tsx`
+- [X] T005 Créer le module d’accès aux données Supabase dans `backend/src/services/stockage.ts`
+- [X] T006 Créer le module de connexion X (connexion, lecture profil, lecture publications publiques) dans `backend/src/services/connexion-x.ts`
+- [X] T007 Créer le modèle commun des états d’affichage (`normal`, `Bientôt disponible`, `Erreur`) dans `frontend/src/services/etat-bloc.ts`
+- [X] T008 Créer les routes serveur communes pour `questionnaire`, `tableau de bord`, `campagnes`, `comparaison` dans `backend/src/api/routes.ts`
+- [X] T009 Créer la page d’entrée et le routage général dans `frontend/src/pages/entree.tsx`
 
 **Point de contrôle** : aucune histoire ne démarre avant la fin de T005 à T009.
 
@@ -44,13 +44,13 @@
 
 ### Réalisation US1
 
-- [ ] T010 [P] [US1] Créer la page de connexion X dans `frontend/src/pages/connexion-x.tsx`
-- [ ] T011 [US1] Implémenter le bouton X visible et actif dans `frontend/src/composants/bouton-connexion-x.tsx`
-- [ ] T012 [US1] Implémenter la redirection immédiate vers tableau de bord dans `frontend/src/services/redirection.ts`
-- [ ] T013 [US1] Créer le formulaire de sondage court (3 questions obligatoires fermées + 2 facultatives) dans `frontend/src/composants/sondage-court.tsx`
-- [ ] T014 [US1] Enregistrer les réponses de sondage dans `backend/src/services/profil-accueil.ts`
-- [ ] T015 [US1] Fusionner données X et réponses de sondage dans `backend/src/services/profil-fusion.ts`
-- [ ] T016 [US1] Afficher le bloc “profil entreprise” enrichi dans `frontend/src/composants/bloc-profil.tsx`
+- [X] T010 [P] [US1] Créer la page de connexion X dans `frontend/src/pages/connexion-x.tsx`
+- [X] T011 [US1] Implémenter le bouton X visible et actif dans `frontend/src/composants/bouton-connexion-x.tsx`
+- [X] T012 [US1] Implémenter la redirection immédiate vers tableau de bord dans `frontend/src/services/redirection.ts`
+- [X] T013 [US1] Créer le formulaire de sondage court (3 questions obligatoires fermées + 2 facultatives) dans `frontend/src/composants/sondage-court.tsx`
+- [X] T014 [US1] Enregistrer les réponses de sondage dans `backend/src/services/profil-accueil.ts`
+- [X] T015 [US1] Fusionner données X et réponses de sondage dans `backend/src/services/profil-fusion.ts`
+- [X] T016 [US1] Afficher le bloc “profil entreprise” enrichi dans `frontend/src/composants/bloc-profil.tsx`
 
 **Point de contrôle** : US1 est livrable seule et montre une valeur claire.
 
@@ -64,13 +64,13 @@
 
 ### Réalisation US2
 
-- [ ] T017 [P] [US2] Créer la page tableau de bord dans `frontend/src/pages/tableau-bord.tsx`
-- [ ] T018 [US2] Créer le bloc influenceurs pertinents dans `frontend/src/composants/bloc-influenceurs.tsx`
-- [ ] T019 [US2] Créer le bloc pertinence de marché dans `frontend/src/composants/bloc-pertinence-marche.tsx`
-- [ ] T020 [US2] Créer le bloc retour sur investissement dans `frontend/src/composants/bloc-retour-investissement.tsx`
-- [ ] T021 [US2] Implémenter les états visuels explicites dans `frontend/src/composants/etat-donnee.tsx`
-- [ ] T022 [US2] Implémenter la récupération des blocs depuis le serveur dans `frontend/src/services/tableau-bord.ts`
-- [ ] T023 [US2] Ajouter les résumés de contenus concurrents (aperçus lisibles) dans `backend/src/services/apercu-contenus.ts`
+- [X] T017 [P] [US2] Créer la page tableau de bord dans `frontend/src/pages/tableau-bord.tsx`
+- [X] T018 [US2] Créer le bloc influenceurs pertinents dans `frontend/src/composants/bloc-influenceurs.tsx`
+- [X] T019 [US2] Créer le bloc pertinence de marché dans `frontend/src/composants/bloc-pertinence-marche.tsx`
+- [X] T020 [US2] Créer le bloc retour sur investissement dans `frontend/src/composants/bloc-retour-investissement.tsx`
+- [X] T021 [US2] Implémenter les états visuels explicites dans `frontend/src/composants/etat-donnee.tsx`
+- [X] T022 [US2] Implémenter la récupération des blocs depuis le serveur dans `frontend/src/services/tableau-bord.ts`
+- [X] T023 [US2] Ajouter les résumés de contenus concurrents (aperçus lisibles) dans `backend/src/services/apercu-contenus.ts`
 
 **Point de contrôle** : US2 reste compréhensible même avec données partielles.
 
@@ -84,13 +84,13 @@
 
 ### Réalisation US3
 
-- [ ] T024 [P] [US3] Créer le modèle de campagne multi-canaux dans `backend/src/domaines/campagne.ts`
-- [ ] T025 [US3] Créer le modèle de mesure de performance dans `backend/src/domaines/mesure-performance.ts`
-- [ ] T026 [US3] Implémenter la création de campagne dans `backend/src/services/campagnes.ts`
-- [ ] T027 [US3] Implémenter l’enregistrement des mesures dans `backend/src/services/mesures.ts`
-- [ ] T028 [US3] Implémenter le calcul comparatif avant/après dans `backend/src/services/comparaison-financement.ts`
-- [ ] T029 [US3] Afficher la comparaison dans `frontend/src/composants/bloc-comparaison.tsx`
-- [ ] T030 [US3] Ajouter la vue de synthèse multi-canaux incluant Meta dans `frontend/src/composants/bloc-multicanal.tsx`
+- [X] T024 [P] [US3] Créer le modèle de campagne multi-canaux dans `backend/src/domaines/campagne.ts`
+- [X] T025 [US3] Créer le modèle de mesure de performance dans `backend/src/domaines/mesure-performance.ts`
+- [X] T026 [US3] Implémenter la création de campagne dans `backend/src/services/campagnes.ts`
+- [X] T027 [US3] Implémenter l’enregistrement des mesures dans `backend/src/services/mesures.ts`
+- [X] T028 [US3] Implémenter le calcul comparatif avant/après dans `backend/src/services/comparaison-financement.ts`
+- [X] T029 [US3] Afficher la comparaison dans `frontend/src/composants/bloc-comparaison.tsx`
+- [X] T030 [US3] Ajouter la vue de synthèse multi-canaux incluant Meta dans `frontend/src/composants/bloc-multicanal.tsx`
 
 **Point de contrôle** : US3 complète la promesse commerciale sans casser US1 et US2.
 
@@ -100,11 +100,11 @@
 
 **Objectif** : fiabiliser, clarifier et préparer la démonstration publique.
 
-- [ ] T031 [P] Mettre à jour le contrat d’interface dans `specs/work/contracts/api.yaml`
-- [ ] T032 [P] Mettre à jour le guide de démonstration dans `specs/work/quickstart.md`
-- [ ] T033 Documenter la stratégie “données réelles minimales + zones en construction” dans `specs/work/research.md`
-- [ ] T034 Vérifier la cohérence de la constitution avec les décisions produit dans `maasagency/.specify/memory/constitution.md`
-- [ ] T035 Vérifier le parcours complet avec la liste de contrôle dans `specs/work/checklists/requirements.md`
+- [X] T031 [P] Mettre à jour le contrat d’interface dans `specs/work/contracts/api.yaml`
+- [X] T032 [P] Mettre à jour le guide de démonstration dans `specs/work/quickstart.md`
+- [X] T033 Documenter la stratégie “données réelles minimales + zones en construction” dans `specs/work/research.md`
+- [X] T034 Vérifier la cohérence de la constitution avec les décisions produit dans `maasagency/.specify/memory/constitution.md`
+- [X] T035 Vérifier le parcours complet avec la liste de contrôle dans `specs/work/checklists/requirements.md`
 
 ---
 

@@ -26,3 +26,5 @@
 
 - Aucune ambiguïté bloquante détectée.
 - Spécification prête pour la phase `/speckit.plan`.
+
+- Vérification complémentaire : couverture du canal Meta incluse.

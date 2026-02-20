@@ -22,6 +22,7 @@ paths:
                   type: array
                   items:
                     type: string
+                    enum: [X, LinkedIn, YouTube, Twitch, Instagram, Meta, Reddit, Telegram, Discord, Substack]
       responses:
         '201':
           description: Réponses enregistrées

@@ -51,10 +51,11 @@ Raison d'être : limiter les régressions et accélérer la livraison utile.
 ## Contraintes produit et données
 
 1. Les canaux pris en charge pour les campagnes sont : X, LinkedIn, YouTube, Twitch,
-   Instagram, Reddit, Telegram, Discord et Substack.
+   Instagram, Meta, Reddit, Telegram, Discord et Substack.
 2. Le questionnaire d'entrée alimente le tableau de bord sans changer sa structure visuelle.
 3. L'authentification est simulée par défaut pendant la phase initiale du produit.
-4. Toute évolution qui change une décision produit déjà validée doit être signalée,
+4. Les états de bloc doivent afficher « Bientôt disponible » en absence de donnée et « Erreur » en cas d'échec.
+5. Toute évolution qui change une décision produit déjà validée doit être signalée,
    contextualisée et confirmée avant exécution.
 
 ## Processus de réalisation

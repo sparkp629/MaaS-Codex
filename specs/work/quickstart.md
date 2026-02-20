@@ -9,7 +9,7 @@ création de campagne, ajout de mesures et comparaison avant/après levée de fo
 
 1. Ouvrir la page d'accueil en mode visiteur.
 2. Vérifier la présence d'un bouton de connexion X non bloquant.
-3. Lancer et compléter le questionnaire d'accueil.
+3. Lancer et compléter le questionnaire d'accueil et le sondage court complémentaire.
 4. Vérifier l'affichage du tableau de bord avec trois blocs fixes.
 5. Créer une campagne sur au moins deux canaux.
 6. Ajouter des mesures pour la période avant levée.

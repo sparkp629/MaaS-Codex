@@ -29,3 +29,10 @@
 - **Décision** : imposer une lecture comparative sur deux périodes.
 - **Raison** : rend la valeur commerciale explicite et mesurable.
 - **Options envisagées** : indicateurs sans période comparative, rejetés car trop vagues.
+
+
+## Décision 6 : Démonstration crédible
+
+- **Décision** : afficher des données réelles minimales puis compléter avec des zones en construction explicites.
+- **Raison** : préserver la confiance tout en montrant la feuille de route.
+- **Options envisagées** : tableau majoritairement fictif, rejeté pour risque de perte de crédibilité.

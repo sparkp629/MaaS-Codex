@@ -1,0 +1,104 @@
+openapi: 3.0.3
+info:
+  title: API de présence médiatique mesurable
+  version: 1.0.0
+paths:
+  /accueil/questionnaire:
+    post:
+      summary: Enregistrer les réponses du questionnaire d'accueil
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [secteur, stadeFinancement, objectifs]
+              properties:
+                secteur:
+                  type: string
+                stadeFinancement:
+                  type: string
+                objectifs:
+                  type: array
+                  items:
+                    type: string
+      responses:
+        '201':
+          description: Réponses enregistrées
+  /tableau-bord/{profilId}:
+    get:
+      summary: Récupérer le tableau de bord personnalisé
+      parameters:
+        - in: path
+          name: profilId
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Tableau de bord retourné
+  /campagnes:
+    post:
+      summary: Créer une campagne multi-canal
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [profilId, periode, canaux]
+              properties:
+                profilId:
+                  type: string
+                periode:
+                  type: string
+                  enum: [avant-levee, apres-levee]
+                canaux:
+                  type: array
+                  items:
+                    type: string
+      responses:
+        '201':
+          description: Campagne créée
+  /campagnes/{campagneId}/mesures:
+    post:
+      summary: Ajouter une mesure de performance
+      parameters:
+        - in: path
+          name: campagneId
+          required: true
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [canal, portee, interactions, clics, cout]
+              properties:
+                canal:
+                  type: string
+                portee:
+                  type: number
+                interactions:
+                  type: number
+                clics:
+                  type: number
+                cout:
+                  type: number
+      responses:
+        '201':
+          description: Mesure ajoutée
+  /campagnes/comparaison:
+    get:
+      summary: Comparer les performances avant et après levée de fonds
+      parameters:
+        - in: query
+          name: profilId
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Comparaison retournée
